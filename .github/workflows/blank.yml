@@ -66,4 +66,6 @@ jobs:
           Source image: ${{ github.event.inputs.IMG_URL }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        permissions: contents:write
+permissions:
+  contents: write
+  
